@@ -1,0 +1,5 @@
+nav {
+    display: fixed;
+    z-index: 99;
+    background-color: white;
+}
