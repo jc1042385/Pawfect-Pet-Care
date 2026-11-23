@@ -16,7 +16,8 @@
 </head>
 
 <body>
-    <nav id="top">
+    <div id="top"></div>
+    <nav>
         <a href="#top">Top</a>
         <a href="#gallary">Gallery</a>
         <a href="#services">Services</a>
@@ -24,58 +25,124 @@
     </nav>
 
     <main>
-        <div id="gallery container">
-            <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="p-2 " id="gallary">
+            <div id="carouselCaptions" class="carousel slide">
                 <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="1"
                         aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="2"
                         aria-label="Slide 3"></button>
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="images/images1.jpeg" class="d-block w-100" alt="">
+                        <img src="images/images1.jpeg" class="d-block w-100" alt="A dog standing happily in a feild">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Cat</h5>
-                            <p>Funny name for a dog, but was super happy to run around after our services.</p>
+                            <p>Suprisingly acurate name for him. He was super happy to run around after being his little
+                                spa day.</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="images/images2.jpeg" class="d-block w-100" alt="">
+                        <img src="images/images2.jpeg" class="d-block w-100"
+                            alt="A cat with the tip of its tounge sticking out">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>The Bloopinator</h5>
-                            <p>Another ridiculous name. Loved the attention though.</p>
+                            <p>Loved the attention the staff was giving her.</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="images/images3.jpeg" class="d-block w-100" alt="Small dog with ">
+                        <img src="images/images3.jpeg" class="d-block w-100"
+                            alt="Small dog with a calming band covering its head">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Mr. Chaos</h5>
-                            <p>He is choas incarnate, loved the belly rubs afterwards though.</p>
+                            <p>Loved the belly rubs after the bath, escaped 18 times before we finished cleaning him
+                                though.</p>
                         </div>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselCaptions"
                     data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselCaptions"
                     data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
         </div>
+        <div class="container" id="services">
+            <h2>Services</h2>
+            <div class="row text-center">
 
-        <div id="services">
 
+                <div class="card col-md-4">
+                    <h3>Daycare</h3>
+                    <img src="images/daycare.jpeg" alt="A group of animals in a fenced in area">
+                    <p>Our staff will will take care of your pet during the day while you are at work. </p>
+                </div>
+
+                <div class="card col-md-4">
+                    <h3> Grooming</h3>
+                    <img src="images/catgrooming.jpg" alt="A cat getting brushed">
+                    <p>Our staff will will provide your pet with a deep cleaning</p>
+                </div>
+
+                <div class="card col-md-4">
+                    <h3>Boarding</h3>
+                    <img src="images/boarding.jpeg" alt="A dog laying in a cot in a pet hotel room.">
+                    <p>Our staff will will hold your pet for you overnight</p>
+                </div>
+            </div>
         </div>
 
-        <div id="faq">
 
+        <div class="container" id="faq">
+            <h2>FAQ</h2>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <p><strong>Q. &nbsp</strong>What should I bring for overnight stays?</p>
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p><strong>A. &nbsp</strong>Your pets favorite toys, any medication they require, and a list of their dietary needs.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <p><strong>Q. &nbsp</strong>What vaccines are required?</p>
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p><strong>A. &nbsp</strong>All vaccines should be up to date. All of them, with a few exceptions, like they can die getting a vaccine, though proof will be needed when dropping them off.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <p><strong>Q. &nbsp</strong>Can I tour the facility?</p>
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p><strong>A. &nbsp</strong>Yes, just ask the front desk person to grab a supervisor for you, though this can vary location to location, or if there are any emergencies being taken care of at the moment.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 </body>

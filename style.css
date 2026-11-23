@@ -1,5 +1,17 @@
 nav {
-    display: fixed;
+    position: fixed;
+    top: 4px;
+    left: 2%;
     z-index: 99;
+    padding: 5px;
+    width: 96%;
     background-color: white;
+}
+
+.carousel-item img{
+    height: 85vh;
+}
+
+.carousel-item img{
+    object-fit: cover;
 }
